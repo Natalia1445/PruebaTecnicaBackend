@@ -27,18 +27,18 @@ public class CuentaDebito extends Cuenta{
 			if (cantidad<=0) {return getSaldo();}
 			if (saldo >= cantidad) {
 				setSaldo(getSaldo() - cantidad);}
-			 return getSaldo();
+			 return saldo;
 		}//retiro
 	
 		@Override 
 		public double deposito(double cantidad) {
 		    if (cantidad <= 0) { 
-		        return getSaldo(); 
+		        return saldo; 
 		    }
 		    if (cantidad > 0) { 
 		        setSaldo(getSaldo() + cantidad);
 		    }
-		    return getSaldo();   // ← este return debe ir fuera del if
+		    return saldo;   // ← este return debe ir fuera del if
 		}//deposito
 		
 		@Override 
@@ -53,9 +53,5 @@ public class CuentaDebito extends Cuenta{
 	        + super.toString() + ", Monto mínimo=" + montoMinimo + "]";
 		}//toString
 		
-		@Override
-		public String imprimir() {
-			// TODO Auto-generated method stub
-			return null;
-		}//Imprimir interface
+		
 }

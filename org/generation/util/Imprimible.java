@@ -1,5 +1,6 @@
 package org.generation.util;
 
 	public interface Imprimible {
-	     String imprimir();
+	    int getNumeroCuenta();
+	    double getSaldo();
 	}

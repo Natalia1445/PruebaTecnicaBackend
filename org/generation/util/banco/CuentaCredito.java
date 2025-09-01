@@ -2,6 +2,7 @@ package org.generation.util.banco;
 
 import java.util.Date;
 
+
 public class CuentaCredito extends Cuenta {
 	private double limite;
 	private float tasa;
@@ -56,12 +57,6 @@ public class CuentaCredito extends Cuenta {
 
 
 
-	@Override
-	public String imprimir() {
-		// TODO Auto-generated method stub
-		return null;
-	}//Imprimir interface
-
 
 	@Override
 	public double retiro(double cantidad) {
@@ -70,7 +65,7 @@ public class CuentaCredito extends Cuenta {
 		} else {
 			setSaldo(getSaldo()-5);
 		}
-		return getSaldo();
+		return saldo;
 	}//retiro
 
 
@@ -83,7 +78,7 @@ public class CuentaCredito extends Cuenta {
 		    if (cantidad > 0) { 
 		        setSaldo(getSaldo() + cantidad);
 		    }
-		    return getSaldo();   // ← este return debe ir fuera del if
+		    return saldo;   // ← este return debe ir fuera del if
 		}//deposito
 
 
