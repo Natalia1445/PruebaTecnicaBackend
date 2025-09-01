@@ -1,9 +1,10 @@
 package org.generation.util.banco;
 
 import java.text.DateFormat;
-import java.text.SimpleDateFormat;
+//import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
+//import org.generation.util.Imprimible;
 
 import org.generation.util.Imprimible;
 
@@ -81,12 +82,5 @@ public abstract class Cuenta implements Imprimible{
 	}//toString
  	
 }//class
-
-
-
-
-
-
-
 
 
